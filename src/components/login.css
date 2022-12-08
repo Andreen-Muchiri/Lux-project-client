@@ -1,0 +1,10 @@
+.login {
+    background-image: url("../components/images/img9.jpg");
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.8;
+  }

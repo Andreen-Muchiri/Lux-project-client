@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  
+}
+
+/* contact css */
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  border-radius: 40px;
+  background-color: beige;
+}
+
+.Auth-form-content {
+  padding-left: 15%;
+  padding-right: 20%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+
+}
+
+
+.homeparent {
+  margin: auto;
+  width: 80%;
+  padding-top: 60px;
+  width: 90%;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.homeparent h1 {
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.page img {
+  height: 500px;
+  width: 500px;
+  border-radius: 5px 90px;
+
+}
+
+.page ul {
+  list-style: none;
+  justify-content: space-between;
+  /* display: flex; */
+  padding: 30px;
+}
+
+.page ul li {
+  display: flex;
+  display: inline;
+  padding: 14px;
+}
+
+.page button {
+  border-radius: 5px 25px;
+  height: 60px;
+}
+
+.page p {
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: 400;
+}
+/* .contact {
+  background-image: url("../components/images/img5.jpg");
+  background-color: yellow;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+} */
