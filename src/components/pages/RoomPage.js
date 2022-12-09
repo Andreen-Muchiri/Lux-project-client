@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import './rooms.css'
 
 
-// import Search from "./Search";
 
 
 function RoomPage() {
@@ -14,13 +14,13 @@ function RoomPage() {
       setIsBooked((isBooked) => !isBooked);
     }
   
-    function handleDeleteBook() {
-      return fetch("https://lux-hotels-production.up.railway.app/rooms",{
-        method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json',
-        }
-    })};
+    // function handleDeleteBook() {
+    //   return fetch("https://lux-hotels-production.up.railway.app/rooms",{
+    //     method: 'DELETE',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     }
+    // })};
      
     
     
@@ -32,17 +32,11 @@ function RoomPage() {
         );
     }, []);
   
-    
-    // const displayedRooms = rooms.filter((room) => {
-    //   return room.name.toLowerCase().includes(searchTerm.toLowerCase());
-    // });
-  
     return (
-      <main>
-        {/* <Search searchTerm={searchTerm} onSearchChange={setSearchTerm} /> */}
+    <div className="container">
     {rooms.map((room)=> {
       return (
-        <div className = "cards-container">
+        <div className="cards-container">
         <div key={room.id} className="card">
         <img src={room.image} alt={room.name} />
         <h4>{room.name}</h4>
@@ -53,14 +47,13 @@ function RoomPage() {
           </button>
         ) : (
           <button onClick={handleToggleBook}>Booked</button>
-          // <button onClick={handleDeleteBook}>Delete</button>
         )}
       </div>
       
       </div>
       )
     })}
-      </main>
+      </div>
     );
   }
   

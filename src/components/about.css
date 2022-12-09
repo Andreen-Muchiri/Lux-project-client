@@ -1,7 +1,7 @@
 .about {
     background-image: url("../components/images/img8.jpg");
     opacity: 0.8;
-background-color: bisque;
+    background-color: bisque;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -16,24 +16,25 @@ background-color: bisque;
   .about {
     margin-bottom: 80px;
   }
-  .about .heading {
+  .about-section  .heading {
     text-align: left;
-    width: 100%;
-    margin-bottom: 100px;
+    width: 80%;
+    margin-bottom: 140px;
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: black;
   }
-  .about p {
-    /* background-color: bisque;
+  .about-section p {
+    color: black;
     font-family: sans-serif;
     font-size: 15px;
     padding-right: 30px;
-    margin-bottom: 350px;
-    line-height: 30px; */
+    margin-bottom: 250px;
+    font-weight: bold;
+    
     font-size: 16px;
-    line-height: 1.5;
-    margin-top: 20px;
+    line-height: 30px;
+    margin-top:20px;
   }
   .button-container{
    display: flex;
