@@ -14,6 +14,16 @@ function RoomPage() {
       setIsBooked((isBooked) => !isBooked);
     }
   
+    function handleDeleteBook() {
+      return fetch("https://lux-hotels-production.up.railway.app/rooms",{
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        }
+    })};
+     
+    
+    
     useEffect(() => {
       // no need to use http://localhost:3000 here
       fetch("https://lux-hotels-production.up.railway.app/rooms")
@@ -33,7 +43,7 @@ function RoomPage() {
     {rooms.map((room)=> {
       return (
         <div className = "cards-container">
-        <li key={room.id} className="card">
+        <div key={room.id} className="card">
         <img src={room.image} alt={room.name} />
         <h4>{room.name}</h4>
         <h4>Price: {room.price}</h4>
@@ -43,8 +53,10 @@ function RoomPage() {
           </button>
         ) : (
           <button onClick={handleToggleBook}>Booked</button>
+          // <button onClick={handleDeleteBook}>Delete</button>
         )}
-      </li>
+      </div>
+      
       </div>
       )
     })}

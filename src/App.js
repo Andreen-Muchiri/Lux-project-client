@@ -18,15 +18,15 @@ function App() {
     <div className='App'>
       <Navbar/>
       <Routes>
-      <Route path='/signup' element={<SignUp/>} />
-          <Route path='/' element={<Home />} />
+      <Route path='/' element={<SignUp/>} />
+          <Route path='/home' element={<Home />} />
           <Route path='/room' element={<RoomPage />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
           {/* <Route path='/signup' element={<SignUp/>} /> */}
       </Routes>
-      
+      <Home/>
       <About />
       <RoomPage/>
       <Contact />

@@ -115,7 +115,7 @@ function SignUp(props) {
             <Link
               type="submit"
               className="btn btn-danger"
-              to="/students"
+              to="/users"
               onClick
             >
               Sign Up

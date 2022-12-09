@@ -53,7 +53,7 @@ To start of you are required to follow the live link provided in the repository 
 
 Below are the necesities to keep note of while using this web application.
 
-         $ npm start client.
+         $ npm start 
 
 * Runs the app in the development mode.
 Open http://localhost:4000 to view it in your browser.
