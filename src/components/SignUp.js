@@ -14,7 +14,7 @@ function SignUp(props) {
   /* fucntion to post data */
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/", {
+    fetch("http://localhost:3000/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

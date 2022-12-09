@@ -28,6 +28,32 @@ function Home(){
     // Update the state variable when the user changes the selection 
     setSelectedPrice(event.target.value);
   };
+  const myFormData = {
+    city: selectedCity,
+    hotel: selectedCity,
+    roomType: selectedRoomType,  
+    price: selectedPrice
+
+  };
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch("http://localhost:3000/hotels", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+    myFormData
+
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  }
+
 
     return (
         <>
@@ -35,7 +61,7 @@ function Home(){
           <div className='container'>
             <Heading title='Search For Your Next Hotel Room ' subtitle='Find new & featured hotels located in your local city.' />
   <div className="form-container">
-            <form className='flex'>
+            <form className='flex' >
             <label>City: 
       <select value={selectedCity} onChange={handleCityChange}>
         <option value="">Select a city...</option>
@@ -91,7 +117,7 @@ function Home(){
     </label>
   
               
-              <button className='search-btn'>
+              <button className='search-btn'onSubmit={handleSubmit}>
                 <i className='fa fa-search'></i>
               </button>
             </form>

@@ -16,7 +16,7 @@ function RoomPage() {
   
     useEffect(() => {
       // no need to use http://localhost:3000 here
-      fetch("http://localhost:3000/rooms")
+      fetch("https://lux-hotels-production.up.railway.app/rooms")
         .then((r) => r.json())
         .then((data) => setRooms(data)
         );
